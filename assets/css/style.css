@@ -8,3 +8,37 @@
 --lwt-pending: #ffc107;
 --lwt-success: #198754;
 }
+
+.bg_grey{
+    background-color: var(--lwt-grey);
+}
+
+/* #region Header */
+
+#app_header{
+    background-color: var(--lwt-light);
+    height: 70px;
+}
+
+.alarm:hover{
+    color: var(--lwt-alarm);
+}
+
+.dropdown-item:hover{
+    background-color: var(--lwt-secondary);
+    color: var(--lwt-light);
+}
+
+/* #endregion Header */
+
+/* #region Aside */
+
+
+
+/* #endregion Aside */
+
+/* #region Main */
+
+
+
+/* #endregion Main */
