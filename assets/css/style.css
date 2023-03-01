@@ -31,9 +31,20 @@
 
 /* #endregion Header */
 
+/* #region Wrapper */
+
+#wrapper{
+    height: calc(100vh - 70px);
+}
+
+/* #endregion Wrapper */
+
 /* #region Aside */
 
-
+#aside{
+    background-color: var(--lwt-secondary);
+    background-image: url(/assets/img/sidebar-bg.png);
+}
 
 /* #endregion Aside */
 
@@ -42,3 +53,14 @@
 
 
 /* #endregion Main */
+
+/* #region Responsive */
+
+
+/* #endregion Responsive */
+
+@media screen and (min-width: 1200px) {
+    #aside{
+        width: 150px;
+    }
+}
