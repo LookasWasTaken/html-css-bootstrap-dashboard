@@ -49,6 +49,7 @@
 #aside{
     background-color: var(--lwt-secondary);
     background-image: url(/assets/img/sidebar-bg.png);
+    background-size: cover;
 }
 
 aside li{
