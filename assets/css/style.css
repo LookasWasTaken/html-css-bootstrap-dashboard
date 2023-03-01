@@ -1,6 +1,7 @@
 :root{
 --lwt-light: #ffffff;
 --lwt-grey: #e5e5e5;
+--lwt-grey-transparent: #e5e5e565;
 --lwt-primary: #1b72e8;
 --lwt-secondary: #051e34;
 --lwt-alarm: #ff8f00;
@@ -11,6 +12,10 @@
 
 .bg_grey{
     background-color: var(--lwt-grey);
+}
+
+.text_white{
+    color: var(--lwt-light);
 }
 
 /* #region Header */
@@ -44,6 +49,20 @@
 #aside{
     background-color: var(--lwt-secondary);
     background-image: url(/assets/img/sidebar-bg.png);
+}
+
+aside li{
+    transition: all 0.4s;
+}
+
+aside li:hover{
+  background-color: var(--lwt-grey-transparent);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+aside li:hover a{
+    color: var(--lwt-secondary);
 }
 
 /* #endregion Aside */
