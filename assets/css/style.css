@@ -178,6 +178,25 @@ aside li:hover i {
 td{
     vertical-align: middle;
 }
+
+#app_main::-webkit-scrollbar {
+    width: 10px;
+}
+
+#app_main::-webkit-scrollbar-thumb {
+    background-color: var(--lwt-light);
+    border-radius: 50px;
+}
+
+#app_main::-webkit-scrollbar-thumb:hover {
+    background-color: var(--lwt-primary);
+}
+
+#app_main::-webkit-scrollbar-track {
+    background-color: var(--lwt-light);
+    border-radius: 10px;
+}
+
 /* #endregion Main */
 
 /* #region Responsive */
