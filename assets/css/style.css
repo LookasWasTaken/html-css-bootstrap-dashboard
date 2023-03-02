@@ -216,11 +216,11 @@ td {
 
 #app_main::-webkit-scrollbar-thumb {
     background-color: var(--lwt-light);
-    border-radius: 50px;
+    border-radius: 5px;
 }
 
 #app_main::-webkit-scrollbar-thumb:hover {
-    background-color: var(--lwt-primary);
+    background: linear-gradient(180deg, #1b72e8, #051e34)
 }
 
 #app_main::-webkit-scrollbar-track {
