@@ -18,7 +18,7 @@
     <header id="app_header" class="container-fluid">
         <div class="row h-100 align-items-center">
             <div class="col flex-grow-0">
-                <img class="d-xl-none" width="40" src="./assets/img/mobile-logo.png" alt="mobile logo">
+                <img class="d-xl-none" width="60" src="./assets/img/mobile-logo.png" alt="mobile logo">
                 <img class="d-none d-xl-inline-block" width="150" src="./assets/img/logo.svg" alt="logo">
             </div>
             <div class="col px-4">
@@ -228,13 +228,15 @@
                     </div>
                     <div class="col-12 col-md-4 col-xl-3 py-3">
                         <div class="fs-6">Studenti online negli ultimi 30 minuti</div>
-                        <div class="fs-2"><span class="italic">125</span></div>
+                        <div class="fs-2 usernumber">
+                            <span>12<span class="changenumber">5</span></span>
+                        </div>
                     </div>
                 </div>
                 <div id="main_bottom">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-12 col-lg-8">
+                            <div class="col-12 col-lg-8 mb-5">
                                 <div class="card my-3">
                                     <div class="card-header bg_secondary text_white">
                                         <h5>Prossime Classi</h5>
@@ -244,8 +246,8 @@
                                             <thead>
                                               <tr>
                                                 <th scope="col" class="w-50">Nome</th>
-                                                <th scope="col">Data d'Inizio</th>
-                                                <th scope="col">ROI</th>
+                                                <th scope="col" class="d-none d-md-table-cell">Data</th>
+                                                <th scope="col" class="d-none d-md-table-cell">ROI</th>
                                                 <th scope="col">Stato</th>
                                                 <th scope="col">Azioni</th>
                                               </tr>
@@ -253,8 +255,8 @@
                                             <tbody>
                                               <tr>
                                                 <td><i class="fa-solid fa-code code_btn"></i>Classe 91</td>
-                                                <td>25 Gennaio 2023</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-md-table-cell">25 Gennaio 2023</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-success">Done</span>
                                                 </td>
@@ -268,8 +270,8 @@
                                               </tr>
                                               <tr>
                                                 <td><i class="fa-solid fa-code code_btn"></i>Classe 92</td>
-                                                <td>27 Gennaio 2023</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-md-table-cell">27 Gennaio 2023</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-warning">Pending</span>
                                                 </td>
@@ -283,8 +285,8 @@
                                               </tr>
                                               <tr>
                                                 <td><i class="fa-solid fa-code code_btn"></i>Classe 93</td>
-                                                <td>29 Gennaio 2023</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-md-table-cell">29 Gennaio 2023</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-danger">Failed</span>
                                                 </td>
@@ -298,8 +300,8 @@
                                               </tr>
                                               <tr>
                                                 <td><i class="fa-solid fa-code code_btn"></i>Classe 94</td>
-                                                <td>31 Gennaio 2023</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-md-table-cell">31 Gennaio 2023</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-warning">Pending</span>
                                                 </td>
@@ -313,8 +315,8 @@
                                               </tr>
                                               <tr>
                                                 <td><i class="fa-solid fa-code code_btn"></i>Classe 95</td>
-                                                <td>02 Febbraio 2023</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-md-table-cell">02 Febbraio 2023</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-success">Done</span>
                                                 </td>
@@ -328,8 +330,8 @@
                                               </tr>
                                               <tr>
                                                 <td><i class="fa-solid fa-code code_btn"></i>Classe 96</td>
-                                                <td>04 Febbraio 2023</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-md-table-cell">04 Febbraio 2023</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-success">Done</span>
                                                 </td>
@@ -343,8 +345,8 @@
                                               </tr>
                                               <tr>
                                                 <td><i class="fa-solid fa-code code_btn"></i>Classe 97</td>
-                                                <td>06 Febbraio 2023</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-md-table-cell">06 Febbraio 2023</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-danger">Failed</span>
                                                 </td>
@@ -358,8 +360,8 @@
                                               </tr>
                                               <tr>
                                                 <td><i class="fa-solid fa-code code_btn"></i>Classe 98</td>
-                                                <td>08 Febbraio 2023</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-md-table-cell">08 Febbraio 2023</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-success">Done</span>
                                                 </td>
@@ -373,8 +375,8 @@
                                               </tr>
                                               <tr>
                                                 <td><i class="fa-solid fa-code code_btn"></i>Classe 99</td>
-                                                <td>10 Febbraio 2023</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-md-table-cell">10 Febbraio 2023</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-success">Done</span>
                                                 </td>
@@ -388,8 +390,8 @@
                                               </tr>
                                               <tr>
                                                 <td><i class="fa-solid fa-code code_btn"></i>Classe 100</td>
-                                                <td>12 Febbraio 2023</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-md-table-cell">12 Febbraio 2023</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-success">Done</span>
                                                 </td>

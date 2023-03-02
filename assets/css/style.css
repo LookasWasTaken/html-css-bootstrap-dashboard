@@ -12,6 +12,10 @@
     --lwt-code: #f26551;
 }
 
+body{
+    font-family: "Fredoka";
+}
+
 .bg_grey {
     background-color: var(--lwt-grey);
 }
@@ -32,7 +36,7 @@
     width: 50% !important;
 }
 
-.f_size12{
+.f_size12 {
     font-size: 12px;
 }
 
@@ -98,6 +102,10 @@ aside li:hover i {
     animation: mirror 2s linear infinite;
 }
 
+.fa-pen-clip:hover, .fa-trash:hover{
+    animation: mirror 2s linear infinite;
+}
+
 @keyframes mirror {
     0% {
         transform: rotateY(0deg);
@@ -112,6 +120,26 @@ aside li:hover i {
     }
 }
 
+.usernumber:hover .changenumber{
+    animation: shell 2s linear infinite;
+    color: var(--lwt-secondary);
+    display: inline-block
+}
+
+@keyframes shell{
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    95% {
+        transform: rotateX(360deg);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
 
 /* #endregion Aside */
 
@@ -122,14 +150,14 @@ aside li:hover i {
 }
 
 #main_top {
-    background-color: var(--lwt-primary);
+    background-color: var(--lwt-primary);;
 }
 
-.rounded-pill{
+.rounded-pill {
     cursor: pointer;
 }
 
-.offcanvas_btn{
+.offcanvas_btn {
     display: flex;
     justify-content: center;
     width: 40px;
@@ -140,31 +168,30 @@ aside li:hover i {
     transition: all 0.5s;
 }
 
-.offcanvas_btn:hover{
+.offcanvas_btn:hover {
     color: var(--lwt-primary);
     background-color: var(--lwt-light);
     border-radius: 25px;
+    animation: spin 2s linear infinite;
 }
 
-.italic{
-    transition: all 0.5s;
-    cursor: pointer;
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    
+    to{
+        transform: rotate(360deg);
+    }
 }
-.italic:hover{
-    font-style: italic;
-    color: var(--lwt-secondary);
-    box-shadow: 0 0 15px 0 var(--lwt-secondary);
-    border-radius: 15px;
-    padding: 0 12px;
-    background-color: var(--lwt-grey-transparent);
-}
+
 
 .form-check-input:checked {
     background-color: var(--lwt-secondary);
     border-color: var(--lwt-primary);
 }
 
-.code_btn{
+.code_btn {
     background-color: var(--lwt-code);
     color: var(--lwt-light);
     border-radius: 25px;
@@ -175,8 +202,12 @@ aside li:hover i {
     margin-right: 5px;
 }
 
-td{
+td {
     vertical-align: middle;
+}
+
+.text-bg-warning {
+    color: var(--lwt-light) !important;
 }
 
 #app_main::-webkit-scrollbar {
@@ -201,15 +232,14 @@ td{
 
 /* #region Responsive */
 
-
-/* #endregion Responsive */
-
 @media screen and (min-width: 1199.99px) {
     #aside {
         width: 180px;
     }
-    
-    .w100{
+
+    .w100 {
         width: 100% !important;
     }
 }
+
+/* #endregion Responsive */
