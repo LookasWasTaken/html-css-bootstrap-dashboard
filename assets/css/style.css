@@ -1,51 +1,67 @@
-:root{
---lwt-light: #ffffff;
---lwt-grey: #e5e5e5;
---lwt-grey-transparent: #e5e5e565;
---lwt-primary: #1b72e8;
---lwt-secondary: #051e34;
---lwt-alarm: #ff8f00;
---lwt-alert: #dc3545;
---lwt-pending: #ffc107;
---lwt-success: #198754;
+:root {
+    --lwt-light: #ffffff;
+    --lwt-grey: #e5e5e5;
+    --lwt-grey-transparent: #e5e5e565;
+    --lwt-primary: #1b72e8;
+    --lwt-secondary: #051e34;
+    --lwt-blue: #165bba;
+    --lwt-alarm: #ff8f00;
+    --lwt-alert: #dc3545;
+    --lwt-pending: #ffc107;
+    --lwt-success: #198754;
 }
 
-.bg_grey{
+.bg_grey {
     background-color: var(--lwt-grey);
 }
 
-.text_white{
+.bg_secondary {
+    background-color: var(--lwt-secondary);
+}
+
+.bg_blue {
+    background-color: var(--lwt-blue);
+}
+
+.text_white {
     color: var(--lwt-light);
+}
+
+.w50 {
+    width: 50% !important;
 }
 
 /* #region Header */
 
-#app_header{
+#app_header {
+    position: relative;
     background-color: var(--lwt-light);
     height: 70px;
+    box-shadow: 0 0 5px 0 var(--lwt-secondary);
 }
 
-.alarm:hover{
+.alarm:hover {
     color: var(--lwt-alarm);
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     background-color: var(--lwt-secondary);
     color: var(--lwt-light);
 }
 
-.menu i{
+.menu i {
     transition: all 0.2s;
 }
 
-.menu i:hover{
+.menu i:hover {
     color: var(--lwt-primary);
 }
+
 /* #endregion Header */
 
 /* #region Wrapper */
 
-#wrapper{
+#wrapper {
     height: calc(100vh - 70px);
 }
 
@@ -53,31 +69,66 @@
 
 /* #region Aside */
 
-#aside{
+#aside {
     background-color: var(--lwt-secondary);
     background-image: url(/assets/img/sidebar-bg.png);
     background-size: cover;
 }
 
-aside li{
+aside li {
     transition: all 0.2s;
 }
 
-aside li:hover{
-  background-color: var(--lwt-grey-transparent);
-  border-radius: 10px;
-  cursor: pointer;
+aside li:hover {
+    background-color: var(--lwt-grey-transparent);
+    border-radius: 7px;
+    cursor: pointer;
 }
 
-aside li:hover a{
+aside li:hover a {
     color: var(--lwt-secondary);
 }
+
+aside li:hover i {
+    animation: mirror 2s linear infinite;
+}
+
+@keyframes mirror {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    95% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
 
 /* #endregion Aside */
 
 /* #region Main */
 
+#app_main {
+    width: 100%;
+}
 
+#main_top {
+    background-color: var(--lwt-primary);
+}
+
+.offcanvas_btn{
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
 
 /* #endregion Main */
 
@@ -86,8 +137,8 @@ aside li:hover a{
 
 /* #endregion Responsive */
 
-@media screen and (min-width: 1200px) {
-    #aside{
-        width: 150px;
+@media screen and (min-width: 992px) {
+    #aside {
+        width: 180px;
     }
 }
