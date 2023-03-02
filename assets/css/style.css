@@ -31,6 +31,10 @@
     width: 50% !important;
 }
 
+.f_size12{
+    font-size: 12px;
+}
+
 /* #region Header */
 
 #app_header {
@@ -120,14 +124,33 @@ aside li:hover i {
     background-color: var(--lwt-primary);
 }
 
+.rounded-pill{
+    cursor: pointer;
+}
+
 .offcanvas_btn{
     display: flex;
     justify-content: center;
     width: 40px;
     aspect-ratio: 1 / 1;
     font-size: 1.5rem;
-    border: 1px solid white;
+    border: 1px solid var(--lwt-light);
     border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.offcanvas_btn:hover{
+    color: var(--lwt-primary);
+    background-color: var(--lwt-light);
+    border-radius: 25px;
+}
+
+.italic{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.italic:hover{
+    font-style: italic;
 }
 
 /* #endregion Main */
@@ -137,7 +160,7 @@ aside li:hover i {
 
 /* #endregion Responsive */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1199.99px) {
     #aside {
         width: 180px;
     }
