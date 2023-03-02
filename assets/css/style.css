@@ -151,8 +151,17 @@ aside li:hover i {
 }
 .italic:hover{
     font-style: italic;
+    color: var(--lwt-secondary);
+    box-shadow: 0 0 15px 0 var(--lwt-secondary);
+    border-radius: 15px;
+    padding: 0 12px;
+    background-color: var(--lwt-grey-transparent);
 }
 
+.form-check-input:checked {
+    background-color: var(--lwt-secondary);
+    border-color: var(--lwt-primary);
+}
 /* #endregion Main */
 
 /* #region Responsive */

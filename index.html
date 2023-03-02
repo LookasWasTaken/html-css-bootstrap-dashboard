@@ -228,7 +228,7 @@
                     </div>
                     <div class="col-12 col-md-4 col-xl-3 py-3">
                         <div class="fs-6">Studenti online negli ultimi 30 minuti</div>
-                        <div class="fs-2 italic">125</div>
+                        <div class="fs-2"><span class="italic">125</span></div>
                     </div>
                 </div>
                 <div id="main_bottom">
@@ -236,7 +236,7 @@
                         <div class="row">
                             <div class="col-12 col-lg-8">
                                 <div class="card my-3">
-                                    <div class="card-header">
+                                    <div class="card-header bg_secondary text_white">
                                         <h5>Prossime Classi</h5>
                                     </div>
                                     <div class="card-body"></div>
@@ -244,15 +244,45 @@
                             </div>
                             <div class="col-12 col-lg-4">
                                 <div class="card my-3">
-                                    <div class="card-header">
+                                    <div class="card-header bg_secondary text_white">
                                         <h5>To-Do</h5>
                                     </div>
-                                    <div class="card-body"></div>
+                                    <div class="card-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkbox1">
+                                                    <label class="form-check-label" for="checkbox1">
+                                                        KickOff nuove classi
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkbox2">
+                                                    <label class="form-check-label" for="checkbox2">
+                                                        Lezione su Bootstrap 5 in classe #91
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkbox3">
+                                                    <label class="form-check-label" for="checkbox3">
+                                                        Controllare username GitHub studenti
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-8">
                                 <div class="card my-3">
-                                    <div class="card-header">
+                                    <div class="card-header bg_secondary text_white">
                                         <h5>F.A.Q.</h5>
                                     </div>
                                     <div class="card-body">
@@ -305,21 +335,21 @@
                                                             mobile</span>
                                                     </div>
                                                 </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="mobile_dashboard_faq">
-                                                        <button class="accordion-button collapsed" type="button"
-                                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                                            aria-expanded="false" aria-controls="collapseThree">
-                                                            Sono decente ad utilizzare Bootstrap?
-                                                        </button>
-                                                    </h2>
-                                                    <div id="collapseFour" class="accordion-collapse collapse"
-                                                        aria-labelledby="mobile_dashboard_faq"
-                                                        data-bs-parent="#faq_accordion">
-                                                        <div class="accordion-body">
-                                                            <span>Questo bisognerebbe chiederlo ai Tutor della Classe 91 di Boolean</span>
-                                                        </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="lookas_faq">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        Pensi che io sia discreto ad utilizzare Bootstrap?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse collapse"
+                                                    aria-labelledby="lookas_faq" data-bs-parent="#faq_accordion">
+                                                    <div class="accordion-body">
+                                                        <span>Lascia un feedback positivo <a href="https://github.com/LookasWasTaken">qui</a></span>
                                                     </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -327,13 +357,17 @@
                             </div>
                             <div class="col-12 col-lg-4">
                                 <div class="card my-3">
-                                    <div class="card-body"></div>
+                                    <div class="card-body">
+                                        <img class="img-fluid px-3" src="./assets/img/stats.jpeg" alt="stats">
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="link-primary">Visualizza Report Approfondito</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </main>
         <!-- /#app_main -->
     </section>
