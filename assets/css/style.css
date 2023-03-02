@@ -9,6 +9,7 @@
     --lwt-alert: #dc3545;
     --lwt-pending: #ffc107;
     --lwt-success: #198754;
+    --lwt-code: #f26551;
 }
 
 .bg_grey {
@@ -162,6 +163,21 @@ aside li:hover i {
     background-color: var(--lwt-secondary);
     border-color: var(--lwt-primary);
 }
+
+.code_btn{
+    background-color: var(--lwt-code);
+    color: var(--lwt-light);
+    border-radius: 25px;
+    width: 25px;
+    aspect-ratio: 1/1;
+    line-height: 25px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+td{
+    vertical-align: middle;
+}
 /* #endregion Main */
 
 /* #region Responsive */
@@ -172,5 +188,9 @@ aside li:hover i {
 @media screen and (min-width: 1199.99px) {
     #aside {
         width: 180px;
+    }
+    
+    .w100{
+        width: 100% !important;
     }
 }
